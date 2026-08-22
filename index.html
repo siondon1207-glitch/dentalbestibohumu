@@ -1,23 +1,1382 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://dental.reliabledone.com/#website",
+        "url": "https://dental.reliabledone.com",
+        "name": "치과치료 실비 및 치아보험 정보 포털",
+        "description": "치과 실손의료비 보장 및 치아보험 비교 분석 전문 정보"
+      },
+      {
+        "@type": "Article",
+        "@id": "https://dental.reliabledone.com/guide#article",
+        "isPartOf": {
+          "@id": "https://dental.reliabledone.com/#website"
+        },
+        "headline": "2026 치과치료 실비 보장 분석 및 급여 비급여 항목별 청구 가이드",
+        "description": "치과치료 실비 적용 범위, 세대별 실손보험 약관 차이, 레진 및 임플란트 등 비급여 치료의 치아보험 연계 전략과 청구 노하우를 상세히 안내합니다.",
+        "inLanguage": "ko-KR",
+        "datePublished": "2026-01-05T09:00:00+09:00",
+        "dateModified": "2026-02-20T14:30:00+09:00",
+        "author": {
+          "@type": "Organization",
+          "name": "금융의료정보분석원"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "치과치료 실비 정보 센터",
+          "url": "https://dental.reliabledone.com"
+        }
+      },
+      {
+        "@type": "FinancialProduct",
+        "name": "치과치료 실손의료비 및 치아보험 보장 분석",
+        "description": "국민건강보험 급여 본인부담금 실손 보장 및 비급여 치과치료 정액 보장 설계",
+        "provider": {
+          "@type": "Organization",
+          "name": "손해보험 및 생명보험 협회 공시 기준 분석센터"
+        },
+        "category": "Insurance"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "치과치료도 일반 실손의료보험(실비)으로 청구가 가능한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "치과치료의 경우 국민건강보험법상 급여 항목으로 처리된 본인부담금에 한하여 가입하신 실손의료보험으로 청구하여 보상받을 수 있습니다. 다만, 골드/세라믹 인레이, 레진, 비급여 크라운, 비급여 임플란트 등 비급여 항목은 일반 실손보험 표준약관상 면책(보상 제외) 사항이므로 전용 치아보험을 통해 대비하셔야 합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "스케일링과 신경치료는 실비 청구 시 환급받을 수 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "스케일링(연 1회 건강보험 적용분 및 잇몸치료 목적)과 신경치료(근관치료), 엑스레이 및 파노라마 촬영, 사랑니 발치 등은 모두 건강보험 급여 항목에 해당하므로, 병원 규모별 공제금액(의원급 1만 원 등)을 초과하는 본인부담금에 대해 실손의료비 청구가 가능합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "임플란트 치료는 실비 청구가 전혀 불가능한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "만 65세 이상 평생 2개까지 적용되는 건강보험 급여 임플란트의 경우 본인부담금(약 30퍼센트)에 대해 실비 청구가 가능합니다. 그러나 만 65세 미만이거나 2개를 초과하는 비급여 임플란트는 실손의료보험에서 보상되지 않으며, 별도의 정액형 치아보험 보철치료 특약을 통해 보상받으셔야 합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "치아 파절(상해 사고)로 인한 치과치료는 실비 적용이 어떻게 되나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "사고로 치아가 깨진 상해 치료의 경우 질병과 달리 상해의료비 특약 조건에 따라 비급여 보존치료의 일부가 보상될 수 있으며, 가입하신 보험의 세대(1세대 일반상해의료비 등) 및 상해 골절진단비(치아파절 포함 여부) 약관에 따라 추가 진단금이 지급될 수 있습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "4세대 실손의료보험에서 치과치료 청구 시 불이익이나 할증이 발생하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4세대 실손의료보험의 비급여 할인할증 제도는 비급여 특약 지급보험금에 대해서만 적용됩니다. 치과치료로 청구하는 항목은 대부분 주계약인 급여 본인부담금이므로 비급여 할증 등급 산정에 영향을 주지 않습니다."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary-color: #1e3a8a;
+      --primary-light: #3b82f6;
+      --secondary-color: #0d9488;
+      --accent-color: #e11d48;
+      --bg-main: #f8fafc;
+      --bg-card: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #475569;
+      --border-color: #cbd5e1;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+      --shadow-lg: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.85;
+      letter-spacing: -0.02em;
+      font-size: 16px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+      color: #ffffff;
+      padding: 3.5rem 1.5rem;
+      text-align: center;
+      box-shadow: var(--shadow-md);
+    }
+
+    header .header-badge {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #93c5fd;
+      padding: 0.35rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      line-height: 1.35;
+      max-width: 900px;
+      margin: 0 auto 1rem auto;
+      word-break: keep-all;
+    }
+
+    header p {
+      font-size: 1.05rem;
+      color: #cbd5e1;
+      max-width: 750px;
+      margin: 0 auto;
+      word-break: keep-all;
+    }
+
+    nav {
+      background-color: #ffffff;
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      overflow-x: auto;
+      white-space: nowrap;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover, nav a:focus {
+      color: var(--primary-light);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .content-card {
+      background-color: var(--bg-card);
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin-bottom: 2.5rem;
+      box-shadow: var(--shadow-md);
+      border: 1px solid #e2e8f0;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 3px solid #e2e8f0;
+      position: relative;
+      word-break: keep-all;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 70px;
+      height: 3px;
+      background-color: var(--primary-light);
+    }
+
+    h3 {
+      color: #0f172a;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin: 1.8rem 0 0.8rem 0;
+      word-break: keep-all;
+    }
+
+    h4 {
+      color: #334155;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 1.2rem 0 0.5rem 0;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      color: var(--text-main);
+      text-align: justify;
+      word-break: keep-all;
+    }
+
+    ul, ol {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+      color: var(--text-main);
+    }
+
+    .highlight-box {
+      background-color: #f0fdf4;
+      border-left: 5px solid var(--secondary-color);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 12px 12px 0;
+      margin: 1.5rem 0;
+      color: #14532d;
+    }
+
+    .info-box {
+      background-color: #eff6ff;
+      border-left: 5px solid var(--primary-light);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 12px 12px 0;
+      margin: 1.5rem 0;
+      color: #1e3a8a;
+    }
+
+    .warning-box {
+      background-color: #fff1f2;
+      border-left: 5px solid var(--accent-color);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 12px 12px 0;
+      margin: 1.5rem 0;
+      color: #881337;
+    }
+
+    /* 표 스타일 */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 1.8rem 0;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+      text-align: left;
+      min-width: 600px;
+    }
+
+    thead th {
+      background-color: #f1f5f9;
+      color: #1e293b;
+      font-weight: 700;
+      padding: 1rem;
+      border-bottom: 2px solid var(--border-color);
+      text-align: center;
+    }
+
+    tbody td {
+      padding: 0.9rem 1rem;
+      border-bottom: 1px solid #e2e8f0;
+      color: #334155;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f5f9;
+    }
+
+    .td-center {
+      text-align: center;
+    }
+
+    .td-bold {
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    /* 시각화 그래프 UI */
+    .chart-box {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .chart-title {
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 1.25rem;
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    .bar-group {
+      margin-bottom: 1rem;
+    }
+
+    .bar-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+      color: #334155;
+    }
+
+    .bar-track {
+      background-color: #e2e8f0;
+      height: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .bar-fill-covered {
+      background: linear-gradient(90deg, #0d9488, #14b8a6);
+      height: 100%;
+      color: #ffffff;
+      font-size: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+
+    .bar-fill-uncovered {
+      background: linear-gradient(90deg, #f43f5e, #fb7185);
+      height: 100%;
+      color: #ffffff;
+      font-size: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+
+    /* 계산기 위젯 */
+    .calculator-widget {
+      background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+      border: 2px solid #bae6fd;
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 2.5rem 0;
+      box-shadow: var(--shadow-md);
+    }
+
+    .calculator-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+
+    @media (max-width: 680px) {
+      .calculator-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .form-group label {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    .form-group select, .form-group input {
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      font-size: 0.95rem;
+      background-color: #ffffff;
+      color: #0f172a;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-group select:focus, .form-group input:focus {
+      border-color: var(--primary-light);
+    }
+
+    .calc-btn {
+      grid-column: 1 / -1;
+      background-color: var(--primary-color);
+      color: #ffffff;
+      border: none;
+      padding: 1rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .calc-btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    .calc-result-panel {
+      margin-top: 1.5rem;
+      padding: 1.5rem;
+      background-color: #ffffff;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+      display: none;
+    }
+
+    .calc-result-panel.active {
+      display: block;
+    }
+
+    .calc-result-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.6rem 0;
+      border-bottom: 1px dashed #e2e8f0;
+      font-size: 0.95rem;
+    }
+
+    .calc-result-item:last-child {
+      border-bottom: none;
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--primary-color);
+      padding-top: 0.8rem;
+    }
+
+    /* FAQ 아코디언 */
+    .faq-item {
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      background-color: #ffffff;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      padding: 1.2rem 1.5rem;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #0f172a;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      background-color: #f8fafc;
+      transition: background-color 0.2s ease;
+    }
+
+    .faq-question:hover {
+      background-color: #f1f5f9;
+    }
+
+    .faq-answer {
+      padding: 1.25rem 1.5rem;
+      display: none;
+      color: var(--text-main);
+      border-top: 1px solid #e2e8f0;
+      line-height: 1.75;
+      background-color: #ffffff;
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    .faq-toggle-text {
+      font-size: 0.85rem;
+      color: var(--primary-light);
+      font-weight: 600;
+    }
+
+    /* 키워드 태그 */
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1.5rem 0;
+    }
+
+    .tag {
+      background-color: #e0f2fe;
+      color: #0369a1;
+      padding: 0.4rem 0.85rem;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .tag:hover {
+      background-color: #bae6fd;
+    }
+
+    /* 링크 스타일 */
+    .reference-link {
+      display: inline-block;
+      color: var(--primary-color);
+      text-decoration: underline;
+      font-weight: 600;
+      margin: 0.3rem 0;
+    }
+
+    footer {
+      background-color: #0f172a;
+      color: #94a3b8;
+      padding: 3rem 1.5rem;
+      font-size: 0.875rem;
+      line-height: 1.7;
+    }
+
+    .footer-container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-links a {
+      color: #cbd5e1;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    @media (max-width: 640px) {
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .grid-box {
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      background-color: #ffffff;
+    }
+
+    .grid-box-header {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-badge">2026년 최신 개정 보험 규정 및 건강보험 기준 완벽 반영</div>
+    <h1>치과치료 실비 청구 및 치아보험 급여 비급여 가이드</h1>
+    <p>치과 치료 시 건강보험 급여와 비급여의 실손의료보험 적용 기준, 세대별 보장 비교, 치료 항목별 예상 비용 및 환급금 계산법을 전문적으로 전달합니다.</p>
+  </header>
+
+  <nav aria-label="메인 탐색">
+    <ul>
+      <li><a href="#section-core">실비 보장 핵심</a></li>
+      <li><a href="#section-calculator">실비 계산기</a></li>
+      <li><a href="#section-treatment">항목별 급여 분석</a></li>
+      <li><a href="#section-generation">세대별 실손 비교</a></li>
+      <li><a href="#section-dental-insurance">전용 치아보험 비교</a></li>
+      <li><a href="#section-community">커뮤니티 트렌드</a></li>
+      <li><a href="#section-claim">청구 서류 가이드</a></li>
+      <li><a href="#section-faq">자주 묻는 질문</a></li>
+      <li><a href="#section-reference">공식 참고자료</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- 제1장: 실비 보장의 핵심 원리와 법적 기준 -->
+    <section id="section-core" class="content-card">
+      <h2>치과치료 실비 청구의 기본 원리와 급여 및 비급여 구분 체계</h2>
+      <p>
+        치과 진료를 받고 난 후 많은 금융소비자가 가장 궁금해하는 부분은 지출한 치과 비용이 본인이 가입한 실손의료보험(일명 실비보험)에서 얼마만큼 환급되는가 하는 점입니다. 대한민국 금융감독원 표준약관 및 국민건강보험법 규정에 따르면 치과 진료비는 크게 건강보험공단에서 지원하는 <strong>급여 항목</strong>과 전액 환자가 부담하는 <strong>비급여 항목</strong>으로 엄격히 이원화되어 있습니다.
+      </p>
+      
+      <div class="info-box">
+        <strong>치과치료 실손의료비 보장의 대원칙:</strong><br>
+        표준 실손의료보험 약관(질병통원의료비 및 상해통원의료비)에서는 국민건강보험법상 급여 항목 중 환자가 부담한 본인부담금에 대해서는 약관상 공제금액을 제외하고 보상합니다. 그러나 비급여 항목으로 분류된 치과 치료비에 대해서는 면책(보상하지 않는 손해) 조항을 적용하고 있습니다.
+      </div>
+
+      <p>
+        따라서 치과 영수증상에서 국민건강보험이 적용된 본인부담금 총액은 의원급 또는 병원급에 따른 공제금액(1만 원에서 2만 원 수준, 혹은 4세대 실손 기준 20퍼센트)을 차감하고 돌려받을 수 있습니다. 반면, 심미적 목적이나 고가의 재료를 사용하는 비급여 치료(골드 인레이, 세라믹 온레이, 지르코니아 크라운, 비급여 임플란트, 치아 교정, 미백 등)는 일반 실비보험에서 보장되지 않으므로 별도의 정액형 다이렉트 치아보험을 통해 대비해야 합니다.
+      </p>
+
+      <h3>치과 치료비 항목별 급여 및 비급여 분류 기준표</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>진료 분류</th>
+              <th>치료 세부 항목</th>
+              <th>건강보험 구분</th>
+              <th>실손의료비 보장 여부</th>
+              <th>주요 참고사항</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-center td-bold">기본 진료</td>
+              <td>초진료, 재진료, 구강검진</td>
+              <td class="td-center">급여</td>
+              <td class="td-center td-bold">보장 가능</td>
+              <td>기본 통원 공제금액 차감 후 지급</td>
+            </tr>
+            <tr>
+              <td class="td-center td-bold">방사선 진단</td>
+              <td>치내 치근단 촬영, 파노라마, 턱관절 CT</td>
+              <td class="td-center">급여</td>
+              <td class="td-center td-bold">보장 가능</td>
+              <td>진단 및 치료 목적 급여 인정 시 전액 대상</td>
+            </tr>
+            <tr>
+              <td class="td-center td-bold">예방 및 잇몸</td>
+              <td>스케일링(연 1회), 치주소파술, 치은박리소파술</td>
+              <td class="td-center">급여</td>
+              <td class="td-center td-bold">보장 가능</td>
+              <td>만 19세 이상 연 1회 건보 스케일링 포함</td>
+            </tr>
+            <tr>
+              <td class="td-center td-bold">보존 치료</td>
+              <td>아말감, 글래스아이오노머(GI), 신경치료(근관치료)</td>
+              <td class="td-center">급여</td>
+              <td class="td-center td-bold">보장 가능</td>
+              <td>근관세척, 근관충전 등 단계별 급여 적용</td>
+            </tr>
+            <tr>
+              <td class="td-center td-bold">구강 외과</td>
+              <td>단순 발치, 난발치, 매복 사랑니 발치 수술</td>
+              <td class="td-center">급여</td>
+              <td class="td-center td-bold">보장 가능</td>
+              <td>수술 및 투약 처방료 급여 본인부담금 보장</td>
+            </tr>
+            <tr>
+              <td class="td-center td-bold">비급여 보존</td>
+              <td>광중합형 복합레진(만 12세 초과), 인레이, 온레이</td>
+              <td class="td-center">비급여</td>
+              <td class="td-center" style="color: var(--accent-color); font-weight:700;">보장 불가</td>
+              <td>실손 면책, 전용 치아보험으로 커버 가능</td>
+            </tr>
+            <tr>
+              <td class="td-center td-bold">비급여 보철</td>
+              <td>크라운(지르코니아, PFM, 골드), 브릿지, 임플란트</td>
+              <td class="td-center">비급여</td>
+              <td class="td-center" style="color: var(--accent-color); font-weight:700;">보장 불가</td>
+              <td>만 65세 이상 급여 임플란트(평생 2개)는 실비 가능</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 제2장: 인터랙티브 예상 비용 및 실비 환급 계산기 -->
+    <section id="section-calculator" class="content-card">
+      <h2>2026년 맞춤형 치과치료 예상 비용 및 실비 환급금 계산기</h2>
+      <p>
+        치과 치료 계획 중인 항목과 본인이 가입한 실손보험 세대를 선택하시면, 예상되는 총 진료비 중 건강보험 급여 본인부담금과 비급여 비용을 분리하여 실손의료보험에서 예상되는 환급 금액을 자동으로 계산해 드립니다.
+      </p>
+
+      <div class="calculator-widget">
+        <h3>치과 실손의료비 계산 시뮬레이터</h3>
+        <div class="calculator-grid">
+          <div class="form-group">
+            <label for="calc-treatment">치료 항목 선택</label>
+            <select id="calc-treatment">
+              <option value="scaling">스케일링 및 구강검진 (급여)</option>
+              <option value="endo">신경치료 3회 및 GI 충전 (급여)</option>
+              <option value="wisdom">매복 사랑니 발치 및 파노라마 촬영 (급여)</option>
+              <option value="resin">광중합 복합 레진 치료 2개 (비급여)</option>
+              <option value="inlay">골드/세라믹 인레이 1개 (비급여)</option>
+              <option value="crown">지르코니아 크라운 1개 (비급여)</option>
+              <option value="implant_senior">만 65세 이상 건보 급여 임플란트 1개 (급여)</option>
+              <option value="implant_general">일반 비급여 임플란트 1개 (비급여)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="calc-silbi-type">가입한 실손의료보험 세대</label>
+            <select id="calc-silbi-type">
+              <option value="gen4">4세대 실손 (2021년 7월 이후, 급여 20% 공제)</option>
+              <option value="gen3">3세대 착한실손 (2017년 4월 ~ 2021년 6월, 의원 1만 원)</option>
+              <option value="gen2">2세대 표준화실손 (2009년 10월 ~ 2017년 3월, 의원 1만 원)</option>
+              <option value="gen1">1세대 구실손 (2009년 9월 이전, 공제금액 5천 원)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="calc-hospital">방문 의료기관 구분</label>
+            <select id="calc-hospital">
+              <option value="clinic">동네 치과의원 (일반 로컬 치과)</option>
+              <option value="hospital">치과병원 (종합병원급 치과)</option>
+              <option value="general">대학병원 치과 (상급종합병원)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="calc-dental-ins">전용 치아보험 가입 여부</label>
+            <select id="calc-dental-ins">
+              <option value="none">치아보험 미가입 (실비만 보유)</option>
+              <option value="has_basic">기본형 치아보험 (보존치료 10만 원 보장)</option>
+              <option value="has_premium">고급형 치아보험 (크라운 40만/임플란트 100만 보장)</option>
+            </select>
+          </div>
+
+          <button type="button" class="calc-btn" onclick="calculateDentalRefund()">예상 진료비 및 실비 환급액 계산하기</button>
+        </div>
+
+        <div id="calc-result" class="calc-result-panel">
+          <div class="calc-result-item">
+            <span>총 예상 치료비용:</span>
+            <span id="res-total-cost">0 원</span>
+          </div>
+          <div class="calc-result-item">
+            <span>건강보험 적용 급여 본인부담금:</span>
+            <span id="res-covered-cost">0 원</span>
+          </div>
+          <div class="calc-result-item">
+            <span>환자 전액 부담 비급여 비용:</span>
+            <span id="res-uncovered-cost">0 원</span>
+          </div>
+          <div class="calc-result-item">
+            <span>실손의료비 예상 지급 환급금:</span>
+            <span id="res-silbi-payout" style="color: var(--secondary-color);">0 원</span>
+          </div>
+          <div class="calc-result-item">
+            <span>전용 치아보험 예상 정액 보험금:</span>
+            <span id="res-dental-payout" style="color: var(--primary-light);">0 원</span>
+          </div>
+          <div class="calc-result-item">
+            <span>최종 본인 실제 부담 예상액:</span>
+            <span id="res-final-cost">0 원</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 제3장: 치료 항목별 상세 급여/비급여 기준 및 실비 분석 -->
+    <section id="section-treatment" class="content-card">
+      <h2>치료 항목별 세부 비용 체계와 급여 인정 범위</h2>
+      <p>
+        치과 진료 시 발생하는 비용은 치료의 목적, 사용하는 치과용 재료, 환자의 연령에 따라 건강보험 적용 여부가 달라집니다. 아래에서 주요 치료 항목별 상세 기준을 살펴보겠습니다.
+      </p>
+
+      <h3>1. 정기 구강검진, 방사선 촬영 및 스케일링</h3>
+      <p>
+        연 1회 제공되는 만 19세 이상 대상 건강보험 치석제거(스케일링)는 전액 본인부담이 아닌 약 15,000원에서 17,000원 수준의 본인부담금만 발생합니다. 의원급 기준 통원 1회당 공제금액(1만 원 내외)을 초과하는 진료비에 대해 실비 청구가 가능합니다. 파노라마 엑스레이 및 치근단 엑스레이 촬영 또한 질병 치료 목적의 검사이므로 전액 급여 항목으로 처리되어 실비 보장 범위에 포함됩니다.
+      </p>
+
+      <h3>2. 충치 보존치료(아말감, 글래스아이오노머, 레진, 인레이)</h3>
+      <p>
+        치아에 충치가 발생했을 때 이를 수복하는 재료에 따라 실비 적용 여부가 완전히 갈립니다.
+      </p>
+      <ul>
+        <li><strong>아말감 및 글래스아이오노머(GI):</strong> 건강보험 급여 항목으로 치아 1개당 본인부담금 약 7,000원에서 15,000원 수준이며, 실손의료비 청구가 가능합니다.</li>
+        <li><strong>광중합형 복합레진:</strong> 만 12세 이하 어린이의 영구치 충치 치료는 건강보험 급여(본인부담금 약 2만 원대)가 적용되어 실비 청구가 가능하지만, 만 13세 이상 청소년 및 성인의 레진 치료는 전액 비급여(치아 1개당 평균 8만 원에서 15만 원)로 일반 실비 청구가 불가능합니다.</li>
+        <li><strong>골드 인레이, 세라믹 온레이:</strong> 충치 부위가 넓어 본을 떠서 부착하는 인레이 및 온레이 치료는 연령과 관계없이 전액 비급여 항목으로 일반 실손보험에서 보상되지 않습니다.</li>
+      </ul>
+
+      <h3>3. 신경치료(근관치료) 및 사후 수복</h3>
+      <p>
+        치수(치아 신경)까지 염증이 침투한 경우 시행하는 신경치료는 대표적인 필수 건강보험 급여 진료입니다. 신경치료는 통상 3회에서 4회에 걸쳐 내원하며 진행되는데, 발수, 근관확대, 근관세척, 근관충전 등 전 과정이 급여로 산정되어 매 회차 본인부담금은 1만 원에서 2만 원 안팎으로 발생합니다. 이 금액은 매 통원 시마다 영수증을 모아 실비보험으로 청구할 수 있습니다. 다만, 신경치료 후 치아의 파절을 방지하기 위해 씌우는 크라운(지르코니아, 골드 등)은 비급여 항목입니다.
+      </p>
+
+      <h3>4. 사랑니 발치 및 구강외과 수술</h3>
+      <p>
+        단순 발치뿐만 아니라 턱뼈 속에 묻혀 있는 단순 매복, 복잡 매복, 완전 매복 사랑니 발치 수술은 모두 건강보험 급여 수술입니다. 수술 전 하치조신경관 손상을 예방하기 위해 촬영하는 3D 치과 CT 역시 발치 수술과 연계될 경우 급여가 인정됩니다. 이에 따라 발생하는 본인부담금(약 3만 원에서 7만 원)은 실비보험 청구 대상입니다.
+      </p>
+
+      <h3>5. 치주질환(잇몸치료) 및 치주수술</h3>
+      <p>
+        잇몸 염증이 깊어져 치조골까지 손상된 경우 진행하는 치근활택술, 치주소파술, 치은박리소파술(잇몸 수술)은 100퍼센트 건강보험 급여 대상 진료입니다. 치료 후 처방받는 소염진통제 및 항생제 약제비 역시 급여 본인부담금에 해당하므로 처방조제비 실손의료비로 함께 환급받을 수 있습니다.
+      </p>
+
+      <h3>6. 임플란트 및 틀니(보철치료)의 급여/비급여 기준</h3>
+      <p>
+        임플란트는 원칙적으로 비급여 항목이지만, 대한민국 건강보험 정책상 <strong>만 65세 이상 어르신에 한하여 평생 2개까지</strong> 건강보험 급여(본인부담률 30퍼센트, 약 38만 원에서 42만 원 수준)가 지원됩니다. 이 경우 만 65세 이상 수급자의 임플란트 본인부담금은 실손의료보험 청구가 가능합니다. 그러나 만 65세 미만 성인이 받는 임플란트 시술이나 2개를 초과하는 추가 식립, 뼈이식(치조골 이식술) 비용은 전액 비급여로 일반 실비에서는 제외됩니다.
+      </p>
+
+      <div class="chart-box">
+        <div class="chart-title">주요 치과 진료 항목별 건강보험 급여 적용 비율 비교</div>
+        
+        <div class="bar-group">
+          <div class="bar-label">
+            <span>정기 스케일링 및 검진 (평균 1.6만 원)</span>
+            <span>급여 100% (실비 청구 가능)</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill-covered" style="width: 100%;">급여 100%</div>
+          </div>
+        </div>
+
+        <div class="bar-group">
+          <div class="bar-label">
+            <span>신경치료 완결 코스 (평균 7만 원)</span>
+            <span>급여 100% (실비 청구 가능)</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill-covered" style="width: 100%;">급여 100%</div>
+          </div>
+        </div>
+
+        <div class="bar-group">
+          <div class="bar-label">
+            <span>매복 사랑니 수술 발치 (평균 5만 원)</span>
+            <span>급여 100% (실비 청구 가능)</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill-covered" style="width: 100%;">급여 100%</div>
+          </div>
+        </div>
+
+        <div class="bar-group">
+          <div class="bar-label">
+            <span>만 65세 이상 급여 임플란트 (평균 120만 원 중)</span>
+            <span>급여 70% 공단부담 / 본인 30% 실비 대상</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill-covered" style="width: 30%;">본인 30% 실비</div>
+            <div class="bar-fill-uncovered" style="width: 70%; background: #64748b;">공단부담 70%</div>
+          </div>
+        </div>
+
+        <div class="bar-group">
+          <div class="bar-label">
+            <span>성인 레진/크라운 치료 (평균 50만 원)</span>
+            <span>비급여 100% (일반 실비 면책)</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill-uncovered" style="width: 100%;">비급여 100%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 제4장: 세대별 실손의료보험 약관 비교 -->
+    <section id="section-generation" class="content-card">
+      <h2>1세대부터 4세대 실손의료보험별 치과 보장 차이점 및 장단점</h2>
+      <p>
+        가입 시점에 따라 체결된 실손의료보험의 세대별 표준약관에 따라 치과 치료비의 보상 계산 방식과 보장 범위에 명확한 차이가 존재합니다. 가입자의 증권을 확인하여 본인의 세대를 정확히 인지하는 것이 필수적입니다.
+      </p>
+
+      <div class="comparison-grid">
+        <div class="grid-box">
+          <div class="grid-box-header" style="color: var(--primary-color);">1세대 구실손 (2009년 9월 이전 가입)</div>
+          <p><strong>주요 특징:</strong> 표준화 이전 상품으로 질병통원의료비와 일반상해의료비 특약으로 구분됩니다.</p>
+          <ul>
+            <li><strong>질병 통원:</strong> 통상 공제금액 5천 원 차감 후 급여 본인부담금을 보상합니다. (일부 상품은 치과 질병 면책 조항 확인 필요)</li>
+            <li><strong>일반상해의료비:</strong> 사고로 치아가 파절된 경우 비급여 치료(레진, 크라운, 임플란트 등)까지 한도 내에서 100퍼센트 보상하는 파격적인 보장을 제공하는 장점이 있습니다.</li>
+            <li><strong>단점:</strong> 갱신 시 보험료 인상 폭이 매우 큽니다.</li>
+          </ul>
+        </div>
+
+        <div class="grid-box">
+          <div class="grid-box-header" style="color: var(--secondary-color);">2세대 표준화 실손 (2009년 10월 ~ 2017년 3월)</div>
+          <p><strong>주요 특징:</strong> 생명보험과 손해보험의 약관이 표준화되어 치과 비급여 면책 조항이 공식 명문화되었습니다.</p>
+          <ul>
+            <li><strong>보장 기준:</strong> 치과 치료 시 국민건강보험법상 급여 본인부담금에 한하여 통원 공제금액(의원 1만 원, 병원 1.5만 원, 종합병원 2만 원) 차감 후 보상합니다.</li>
+            <li><strong>자기부담금:</strong> 초기 100% 보장형부터 90% 보장형, 80% 선택형Ⅱ 등으로 세분화되어 있습니다.</li>
+            <li><strong>단점:</strong> 비급여 치과 치료는 질병과 상해를 불문하고 면책됩니다.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="comparison-grid">
+        <div class="grid-box">
+          <div class="grid-box-header" style="color: #0284c7;">3세대 착한실손 (2017년 4월 ~ 2021년 6월)</div>
+          <p><strong>주요 특징:</strong> 기본형(급여+비급여)과 3대 비급여 특약(도수치료, 비급여주사, 비급여MRI)으로 분리된 구조입니다.</p>
+          <ul>
+            <li><strong>보장 기준:</strong> 기본형 질병/상해 통원에서 치과 급여 본인부담금을 의원 1만 원 공제 또는 급여 10~20% 중 큰 금액을 제외하고 보상합니다.</li>
+            <li><strong>특징:</strong> 직전 2년간 무사고 시 차년도 보험료 10% 할인 혜택이 적용됩니다.</li>
+          </ul>
+        </div>
+
+        <div class="grid-box">
+          <div class="grid-box-header" style="color: #4f46e5;">4세대 및 2026년 개정 실손 (2021년 7월 이후)</div>
+          <p><strong>주요 특징:</strong> 주계약(급여)과 특약(비급여)이 완전히 분리되었으며 비급여 이용량에 따른 차등 할증제가 도입되었습니다.</p>
+          <ul>
+            <li><strong>보장 기준:</strong> 치과 치료 시 주계약인 급여 본인부담금의 20퍼센트와 의원 1만 원 중 큰 금액을 공제하고 환급합니다.</li>
+            <li><strong>장점:</strong> 치과 급여 청구는 주계약 청구이므로 비급여 할인할증 등급(1~5단계)에 일절 부정적 영향을 미치지 않아 부담 없이 청구 가능합니다.</li>
+            <li><strong>보험료:</strong> 월 납입 요금이 가장 저렴하여 유지 부담이 낮습니다.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 제5장: 전용 치아보험과의 차이점 및 결합 비교 분석 -->
+    <section id="section-dental-insurance" class="content-card">
+      <h2>치과치료 실비와 전용 치아보험(정액형)의 완벽 비교 및 결합 전략</h2>
+      <p>
+        실손의료비 하나만으로는 고액의 비급여 치과 치료비를 감당할 수 없습니다. 따라서 대다수의 치과 전문의료진과 금융 전문가들은 실비보험의 급여 커버력 위에 다이렉트 치아보험의 비급여 정액 보장을 결합하는 방식을 가장 추천합니다.
+      </p>
+
+      <h3>실손의료보험 vs 전용 치아보험 상세 비교표</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>비교 항목</th>
+              <th>일반 실손의료보험 (실비)</th>
+              <th>전용 치아보험 (정액 보장형)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-bold">상품 성격</td>
+              <td>실제 손해액 비례 보상 (실손형)</td>
+              <td>약정된 금액 정액 지급 (정액형)</td>
+            </tr>
+            <tr>
+              <td class="td-bold">치과 급여 보장</td>
+              <td><strong>전액 보장 대상</strong> (공제금액 제외)</td>
+              <td>일부 특약(엑스레이, 발치 등 소액)만 지급</td>
+            </tr>
+            <tr>
+              <td class="td-bold">비급여 보존 (레진, 인레이)</td>
+              <td style="color: var(--accent-color);">보장 불가 (면책)</td>
+              <td><strong>치아당 5만 ~ 30만 원 정액 지급</strong></td>
+            </tr>
+            <tr>
+              <td class="td-bold">비급여 보철 (크라운, 임플란트)</td>
+              <td style="color: var(--accent-color);">보장 불가 (만 65세 이상 급여 제외)</td>
+              <td><strong>크라운 20~50만 / 임플란트 50~200만 원 지급</strong></td>
+            </tr>
+            <tr>
+              <td class="td-bold">면책 및 감액 기간</td>
+              <td>가입 즉시 보장 개시</td>
+              <td>면책 90일, 가입 1~2년 내 50% 감액 기간 존재</td>
+            </tr>
+            <tr>
+              <td class="td-bold">중복 보상 여부</td>
+              <td>비례 보상 (여러 개 가입해도 1개만 지급)</td>
+              <td><strong>중복 지급 가능</strong> (여러 개사 정액 합산 수령)</td>
+            </tr>
+            <tr>
+              <td class="td-bold">월 납입 요금대</td>
+              <td>연령별 1만 ~ 4만 원대 (전체 질병/상해 통합)</td>
+              <td>단독 다이렉트 기준 2만 ~ 5만 원대</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>치아보험 가입 시 필수 체크리스트</h3>
+      <ol>
+        <li><strong>무진단형의 면책기간 및 감액기간 숙지:</strong> 전화나 인터넷으로 간편 가입하는 무진단형 치아보험은 가입일로부터 90일간 질병 치료 면책 기간이 적용되며, 크라운 및 임플란트는 통상 1년에서 2년 이내 치료 시 보장금액의 50퍼센트만 지급됩니다.</li>
+        <li><strong>보철치료 연간 한도 확인:</strong> 과거 상품과 달리 최근 상품들은 임플란트 개수 무제한 보장 특약과 연간 3개 한도 특약으로 나뉘므로 약관의 세부 규정을 확인해야 합니다.</li>
+        <li><strong>다이렉트 비교 사이트 활용:</strong> 설계사를 통한 대면 가입보다 온라인 다이렉트 전용몰을 통할 경우 사업비가 절감되어 동일한 보장 금액 대비 최저가 수준으로 15~20% 저렴하게 설계할 수 있습니다.</li>
+      </ol>
+    </section>
+
+    <!-- 제6장: 커뮤니티 트렌드 분석 및 핀테크/AI 활용법 -->
+    <section id="section-community" class="content-card">
+      <h2>커뮤니티 트렌드와 핀테크 앱 및 생성형 AI를 활용한 실무 청구 팁</h2>
+      <p>
+        최근 디시인사이드 보험 갤러리, 에펨코리아(펨코), 보배드림 등 다양한 온라인 커뮤니티에서는 실제 환자들의 내돈내산 치과 치료 후기와 실비 청구 꿀팁이 활발히 공유되고 있습니다. 네티즌들이 실시간으로 추천하는 핵심 노하우와 핀테크 모바일 어플리케이션 및 생성형 AI 도구(챗지피티, 제미나이 등)를 활용한 스마트 청구법을 정리해 드립니다.
+      </p>
+
+      <h3>1. 온라인 커뮤니티에서 검증된 핵심 후기 및 주의점</h3>
+      <p>
+        커뮤니티 실전 경험자들에 따르면, 치과 진료 전 반드시 치과위생사나 원무과에 <em>건강보험 급여 항목 위주로 진료를 희망한다</em>는 의사를 명확히 밝히는 것이 과잉 진료를 예방하는 가장 좋은 방법으로 꼽힙니다. 인터넷 성지나 특정 치과 좌표를 통해 무조건적인 현금지원, 상품권 사은품, 지원금 혜택을 미끼로 과도한 비급여 진료를 권유하는 전문 브로커 업체의 경우 향후 보험사 현장 실사 및 보험사기 조사 대상이 될 수 있으므로 각별한 주의가 요구됩니다.
+      </p>
+
+      <h3>2. 핀테크 앱을 활용한 1분 모바일 청구 시스템</h3>
+      <p>
+        토스, 카카오톡 페이, 네이버페이 등 주요 핀테크 어플의 <strong>병원비 돌려받기 / 실손보험 빠른 청구</strong> 서비스를 이용하면 종이 서류를 팩스로 보낼 필요 없이 스마트폰 카메라로 진료비 영수증을 촬영하여 즉시 접수할 수 있습니다. 특히 연계된 병원의 경우 서류 제출 없이 마이데이터 연동을 통해 원클릭으로 청구가 완료되어 영업일 기준 24시간 이내에 보상금이 입금됩니다.
+      </p>
+
+      <h3>3. 챗지피티 및 제미나이 AI를 활용한 실비 가능 항목 자가 분석</h3>
+      <p>
+        치과에서 발급받은 <strong>진료비 세부내역서</strong>를 사진으로 찍어 최신 멀티모달 생성형 AI(챗지피티, 제미나이 등)에 업로드한 뒤 <em>"이 진료 내역서에서 건강보험 급여 항목과 비급여 항목을 분류하고, 4세대 실손보험에서 공제금액 차감 후 예상 환급액을 계산해 줘"</em>라고 질문하면 복잡한 질병 코드와 급여 비급여 금액을 단 몇 초 만에 체계적으로 분석받을 수 있습니다.
+      </p>
+    </section>
+
+    <!-- 제7장: 치과 실비 완벽 청구 절차 및 필수 서류 -->
+    <section id="section-claim" class="content-card">
+      <h2>치과 실비 보험금 청구 절차와 필수 제출 서류 총정리</h2>
+      <p>
+        치과 치료 후 보험사에 청구할 때 서류 미비로 인해 보상이 지연되거나 반려되는 사례가 빈번합니다. 아래의 필수 서류를 진료 당일 치과 수납 창구에서 일괄 발급받으시면 신속하게 보험금을 수령할 수 있습니다.
+      </p>
+
+      <div class="highlight-box">
+        <strong>치과 통원 실비 청구 시 필수 무료 발급 서류 3종:</strong>
+        <ol style="margin-top: 0.5rem; margin-bottom: 0;">
+          <li><strong>진료비 계산서 및 영수증:</strong> 급여와 비급여 본인부담금이 명확히 표기된 표준 영수증 (카드 매출전표는 인정 불가)</li>
+          <li><strong>진료비 세부내역서:</strong> 진료 행위별 코드 및 급여 인정 여부가 기재된 내역서</li>
+          <li><strong>처방전(환자 보관용):</strong> 약국 조제비 청구용 (질병분류코드 K코드 기재 필수)</li>
+        </ol>
+      </div>
+
+      <h3>추가 확인 서류가 요구되는 특수 상황</h3>
+      <ul>
+        <li><strong>상해 사고로 인한 치아 파절:</strong> 초진기록지, 사고 경위서, 방사선 엑스레이 필름 사본 (질병코드 K02/K04가 아닌 상해 코드 S02.5 등이 기재되어야 함)</li>
+        <li><strong>전용 치아보험 정액 청구 시:</strong> 보험사 전용 치과치료확인서(치과의사 날인 필수), 치료 전후 파노라마 엑스레이 사진, 영구치 발치 날짜가 기재된 의무기록사본</li>
+        <li><strong>턱관절 장애 치료:</strong> 물리치료 시행 기록지 및 측두하악관절 X-ray 판독지</li>
+      </ul>
+    </section>
+
+    <!-- 제8장: 2026년 치료 항목별 평균 비용 통계 및 실비 환급액 시뮬레이션 표 -->
+    <section id="section-simulation" class="content-card">
+      <h2>2026 주요 치과치료 항목별 예상 진료비 및 실비 환급 시뮬레이션</h2>
+      <p>
+        대한치과의사협회 및 건강보험심사평가원의 최신 통계 데이터를 기반으로 산출된 2026년 표준 의원급 치과의 대표적인 치료 케이스별 실비 환급 예상 표입니다.
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>치료 시나리오</th>
+              <th>총 진료비</th>
+              <th>급여 본인부담금</th>
+              <th>비급여 비용</th>
+              <th>4세대 실손 환급액</th>
+              <th>실제 환자 부담액</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>정기 스케일링 + 파노라마 검진</td>
+              <td class="td-center">52,000 원</td>
+              <td class="td-center">17,400 원</td>
+              <td class="td-center">0 원</td>
+              <td class="td-center td-bold" style="color: var(--secondary-color);">7,400 원</td>
+              <td class="td-center">10,000 원</td>
+            </tr>
+            <tr>
+              <td>매복 사랑니 1개 수술 발치</td>
+              <td class="td-center">110,000 원</td>
+              <td class="td-center">38,500 원</td>
+              <td class="td-center">0 원</td>
+              <td class="td-center td-bold" style="color: var(--secondary-color);">28,500 원</td>
+              <td class="td-center">10,000 원</td>
+            </tr>
+            <tr>
+              <td>어금니 신경치료 4회 완결</td>
+              <td class="td-center">210,000 원</td>
+              <td class="td-center">68,000 원</td>
+              <td class="td-center">0 원</td>
+              <td class="td-center td-bold" style="color: var(--secondary-color);">48,000 원</td>
+              <td class="td-center">20,000 원</td>
+            </tr>
+            <tr>
+              <td>충치 광중합 레진 치료 2개</td>
+              <td class="td-center">220,000 원</td>
+              <td class="td-center">0 원</td>
+              <td class="td-center">220,000 원</td>
+              <td class="td-center" style="color: var(--accent-color);">0 원</td>
+              <td class="td-center">220,000 원</td>
+            </tr>
+            <tr>
+              <td>신경치료 후 지르코니아 크라운</td>
+              <td class="td-center">580,000 원</td>
+              <td class="td-center">68,000 원</td>
+              <td class="td-center">500,000 원</td>
+              <td class="td-center td-bold" style="color: var(--secondary-color);">48,000 원</td>
+              <td class="td-center">532,000 원</td>
+            </tr>
+            <tr>
+              <td>만 65세 이상 급여 임플란트 1개</td>
+              <td class="td-center">1,280,000 원</td>
+              <td class="td-center">384,000 원</td>
+              <td class="td-center">0 원</td>
+              <td class="td-center td-bold" style="color: var(--secondary-color);">307,200 원</td>
+              <td class="td-center">76,800 원</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size: 0.85rem; color: var(--text-muted);">
+        안내: 상기 금액은 의원급 기준이며 의사의 처방 내용, 마취 여부, 야간/공휴일 가산율 및 가입하신 실손보험 세대별 공제 방식에 따라 실제 수령액과 약간의 차이가 발생할 수 있습니다.
+      </p>
+    </section>
+
+    <!-- 제9장: 자주 묻는 질문 FAQ -->
+    <section id="section-faq" class="content-card">
+      <h2>치과치료 실비 관련 자주 묻는 질문 (FAQ)</h2>
+      <p>치과 실손의료비 및 치아보험 청구와 관련하여 소비자들이 가장 많이 질의하는 항목을 엄선하여 알기 쉽게 정리하였습니다.</p>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Q1. 턱관절 장애(턱에서 소리가 나고 통증)로 치과 치료 시 실비가 되나요?</span>
+          <span class="faq-toggle-text">답변 보기</span>
+        </div>
+        <div class="faq-answer">
+          턱관절 장애(측두하악장애)는 질병분류코드 K07.6에 해당하는 질환으로, 치과에서 시행하는 구강악안면 방사선 검사, 턱관절 물리치료(단순자극, 전기자극, 이온도입 등), 약물 처방은 모두 건강보험 급여 항목입니다. 따라서 공제금액을 제외한 본인부담금 전액 실비 청구가 가능합니다. 다만, 교합안정장치(스플린트)나 보톡스 주사 요법의 경우 비급여로 산정되는 경우가 많아 해당 항목은 실손 보상에서 제외될 수 있습니다.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Q2. 치아가 깨져서(치아 파절) 씌운 크라운 치료는 상해 실비로 나오나요?</span>
+          <span class="faq-toggle-text">답변 보기</span>
+        </div>
+        <div class="faq-answer">
+          2009년 9월 이전 가입한 1세대 실손보험 중 '일반상해의료비' 특약을 보유하고 계신 경우 상해로 인한 치아 파절 시 비급여 크라운 치료비도 가입 한도 내에서 100퍼센트 보상받을 수 있습니다. 그러나 2009년 10월 이후 표준화된 2세대, 3세대, 4세대 실손보험은 상해라 할지라도 치과 치료의 비급여 항목은 약관상 면책으로 규정되어 있어 급여 본인부담금만 지급됩니다. 대신 상해 골절진단비(치아파절 포함 특약)에 가입되어 있다면 진단비 수령은 가능합니다.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Q3. 충치로 레진 치료를 받았는데 실비 청구하면 아예 돈이 안 나오나요?</span>
+          <span class="faq-toggle-text">답변 보기</span>
+        </div>
+        <div class="faq-answer">
+          성인의 광중합형 복합레진 치료 자체는 비급여 항목이므로 해당 치료비는 실비에서 보장되지 않습니다. 하지만 레진 치료를 받기 위해 치과에 방문했을 때 발생한 초진/재진 진찰료, 구강 방사선 엑스레이 촬영비 등은 급여 항목으로 처리됩니다. 만약 해당 날짜의 총 급여 본인부담금이 가입하신 실손보험의 공제금액(의원 1만 원 등)을 초과한다면 그 초과분에 대해서는 환급받으실 수 있습니다.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Q4. 임플란트 수술 시 뼈이식(치조골 이식) 비용은 실비나 수술비 특약에서 나오나요?</span>
+          <span class="faq-toggle-text">답변 보기</span>
+        </div>
+        <div class="faq-answer">
+          치조골 이식술은 일반 실손의료보험에서는 비급여 치과 처치로 분류되어 보상되지 않습니다. 그러나 과거 생명보험사나 손해보험사의 '종수술비(1~3종 또는 1~5종)' 특약에 가입되어 있는 경우, 골이식술에 대해 2종 또는 3종 수술비 보험금을 정액으로 수령할 수 있는 경우가 있으므로 보유하신 보험의 수술분류표를 반드시 확인하시기 바랍니다.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Q5. 치아보험을 인터넷 다이렉트로 가입하고 바로 다음 날 치과에 가도 되나요?</span>
+          <span class="faq-toggle-text">답변 보기</span>
+        </div>
+        <div class="faq-answer">
+          상해(교통사고, 외상 등)로 인한 치료는 가입 첫날부터 100퍼센트 보장되지만, 질병(충치, 잇몸질환 등)으로 인한 치료는 통상 가입일로부터 90일간의 면책기간이 존재합니다. 90일 이내에 충치 진단을 받고 치료를 시작하면 보험금이 전혀 지급되지 않으므로 반드시 90일이 지난 이후에 치과 검진 및 치료를 개시하셔야 합니다.
+        </div>
+      </div>
+    </section>
+
+    <!-- 제10장: 공식 참고 자료 및 신뢰할 수 있는 출처 -->
+    <section id="section-reference" class="content-card">
+      <h2>공인된 신뢰성 있는 공식 참고자료 및 외부 사이트</h2>
+      <p>치과 건강보험 급여 항목, 비급여 진료비 표준 통계 및 보험 약관과 관련된 공신력 있는 공식 기관의 정보 출처입니다.</p>
+
+      <ul>
+        <li>
+          <a class="reference-link" href="https://dentalbestibohumv.directreliable.com" target="_blank" rel="noopener noreferrer">
+            치과치료 실비 및 치아보험 보장 분석 센터 (ReliableDone Dental Portal)
+          </a>: 2026년 치과 실손의료비 최신 개정 약관 분석 및 실시간 보험료 비교 포털
+        </li>
+        <li>
+          <a class="reference-link" href="https://www.nhis.or.kr" target="_blank" rel="noopener noreferrer">
+            국민건강보험공단 (NHIS)
+          </a>: 스케일링, 신경치료, 노인 임플란트 건강보험 급여 보장 정책 및 본인부담률 공식 안내
+        </li>
+        <li>
+          <a class="reference-link" href="https://www.hira.or.kr" target="_blank" rel="noopener noreferrer">
+            건강보험심사평가원 (HIRA)
+          </a>: 전국 치과의원 및 병원 비급여 진료비용(임플란트, 레진, 크라운) 공개 표준 데이터
+        </li>
+        <li>
+          <a class="reference-link" href="https://namu.wiki/w/%EC%8B%A4%EC%86%90%EC%9D%98%EB%A3%8C%EB%B9%84" target="_blank" rel="noopener noreferrer">
+            나무위키 실손의료비 문서
+          </a>: 대한민국 실손의료보험 세대별(1세대~4세대) 변천사 및 치과 면책 조항 역사적 해설
+        </li>
+      </ul>
+
+      <div class="tag-container" aria-label="연관 검색 키워드 태그">
+        <span class="tag">치과치료 실비</span>
+        <span class="tag">치아보험 비교</span>
+        <span class="tag">급여 비급여 차이점</span>
+        <span class="tag">스케일링 실비 청구</span>
+        <span class="tag">신경치료 실손보험</span>
+        <span class="tag">임플란트 건강보험 환급</span>
+        <span class="tag">4세대 실손 치과</span>
+        <span class="tag">사랑니 발치 실비</span>
+        <span class="tag">다이렉트 치아보험 추천</span>
+        <span class="tag">치과 진료비 계산기</span>
+      </div>
+    </section>
+  </main>
+
+
+  
+
+  <script>
+    // FAQ 아코디언 상호작용 스크립트
+    document.querySelectorAll('.faq-question').forEach(function(question) {
+      question.addEventListener('click', function() {
+        var item = this.parentElement;
+        var isOpen = item.classList.contains('open');
+        
+        document.querySelectorAll('.faq-item').forEach(function(el) {
+          el.classList.remove('open');
+          var toggleText = el.querySelector('.faq-toggle-text');
+          if (toggleText) toggleText.textContent = '답변 보기';
+        });
+
+        if (!isOpen) {
+          item.classList.add('open');
+          var currentToggleText = item.querySelector('.faq-toggle-text');
+          if (currentToggleText) currentToggleText.textContent = '답변 닫기';
+        }
+      });
+    });
+
+    // 치과 진료비 및 실비 환급 계산기 로직
+    function calculateDentalRefund() {
+      var treatment = document.getElementById('calc-treatment').value;
+      var silbiType = document.getElementById('calc-silbi-type').value;
+      var hospital = document.getElementById('calc-hospital').value;
+      var dentalIns = document.getElementById('calc-dental-ins').value;
+
+      var totalCost = 0;
+      var coveredCost = 0;
+      var uncoveredCost = 0;
+      var silbiPayout = 0;
+      var dentalPayout = 0;
+
+      // 치료 항목별 기본 비용 세팅 (단위: 원)
+      switch(treatment) {
+        case 'scaling':
+          totalCost = 50000;
+          coveredCost = 16000;
+          uncoveredCost = 0;
+          break;
+        case 'endo':
+          totalCost = 210000;
+          coveredCost = 70000;
+          uncoveredCost = 0;
+          break;
+        case 'wisdom':
+          totalCost = 120000;
+          coveredCost = 45000;
+          uncoveredCost = 0;
+          break;
+        case 'resin':
+          totalCost = 200000;
+          coveredCost = 10000; // 기본 진찰료만 급여
+          uncoveredCost = 190000;
+          if (dentalIns === 'has_basic') dentalPayout = 100000;
+          if (dentalIns === 'has_premium') dentalPayout = 160000;
+          break;
+        case 'inlay':
+          totalCost = 320000;
+          coveredCost = 10000;
+          uncoveredCost = 310000;
+          if (dentalIns === 'has_basic') dentalPayout = 150000;
+          if (dentalIns === 'has_premium') dentalPayout = 200000;
+          break;
+        case 'crown':
+          totalCost = 550000;
+          coveredCost = 15000;
+          uncoveredCost = 535000;
+          if (dentalIns === 'has_basic') dentalPayout = 200000;
+          if (dentalIns === 'has_premium') dentalPayout = 400000;
+          break;
+        case 'implant_senior':
+          totalCost = 1250000;
+          coveredCost = 380000;
+          uncoveredCost = 0;
+          if (dentalIns === 'has_premium') dentalPayout = 500000;
+          break;
+        case 'implant_general':
+          totalCost = 1200000;
+          coveredCost = 10000;
+          uncoveredCost = 1190000;
+          if (dentalIns === 'has_basic') dentalPayout = 500000;
+          if (dentalIns === 'has_premium') dentalPayout = 1000000;
+          break;
+      }
+
+      // 의료기관별 공제 기본값
+      var clinicDeduct = 10000;
+      if (hospital === 'hospital') clinicDeduct = 15000;
+      if (hospital === 'general') clinicDeduct = 20000;
+
+      // 실비 세대별 급여 환급액 계산
+      if (coveredCost > 0) {
+        if (silbiType === 'gen1') {
+          silbiPayout = Math.max(0, coveredCost - 5000);
+        } else if (silbiType === 'gen2') {
+          silbiPayout = Math.max(0, coveredCost - clinicDeduct);
+        } else if (silbiType === 'gen3') {
+          var deduct3 = Math.max(clinicDeduct, coveredCost * 0.1);
+          silbiPayout = Math.max(0, coveredCost - deduct3);
+        } else if (silbiType === 'gen4') {
+          var deduct4 = Math.max(clinicDeduct, coveredCost * 0.2);
+          silbiPayout = Math.max(0, coveredCost - deduct4);
+        }
+      }
+
+      var finalPatientBurden = totalCost - silbiPayout - dentalPayout;
+      if (finalPatientBurden < 0) finalPatientBurden = 0;
+
+      // 결과 렌더링
+      document.getElementById('res-total-cost').textContent = totalCost.toLocaleString() + ' 원';
+      document.getElementById('res-covered-cost').textContent = coveredCost.toLocaleString() + ' 원';
+      document.getElementById('res-uncovered-cost').textContent = uncoveredCost.toLocaleString() + ' 원';
+      document.getElementById('res-silbi-payout').textContent = Math.round(silbiPayout).toLocaleString() + ' 원';
+      document.getElementById('res-dental-payout').textContent = dentalPayout.toLocaleString() + ' 원';
+      document.getElementById('res-final-cost').textContent = Math.round(finalPatientBurden).toLocaleString() + ' 원';
+
+      document.getElementById('calc-result').classList.add('active');
+    }
+  </script>
+  
